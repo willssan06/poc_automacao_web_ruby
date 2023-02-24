@@ -16,3 +16,6 @@ run_scripts:
   artifacts:
     paths:
       - report/
+  only:
+    refs:
+      - master
