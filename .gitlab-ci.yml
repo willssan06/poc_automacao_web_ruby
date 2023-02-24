@@ -1,0 +1,18 @@
+# Define a imagem base para o Runner do GitLab
+image: ruby:2.7.2
+
+# Define os estágios que serão executados
+stages:
+  - test
+  
+run_scripts:
+  stage: test
+  script:
+    - gem install bundler # Instala o Bundler para gerenciar as dependências
+    - apt-get update # Atualiza a lista de pacotes disponíveis
+    - apt-get install -y chromium-driver # Instala o ChromeDriver
+    - bundle install
+    - bundle exec cucumber -p pretty -p dev -p headless  -p html -p json
+  artifacts:
+    paths:
+      - report/

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "creater-user",
+    "uri": "features/specifications/register_account.feature",
+    "keyword": "Feature",
+    "name": "Creater user",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "creater-user;creater-user-with-success",
+        "keyword": "Scenario",
+        "name": "Creater user with success",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I create a user",
+            "line": 4,
+            "match": {
+              "location": "features/steps_definitions/register_account.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11064457600
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29100
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11400
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107718500
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
