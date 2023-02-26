@@ -1,11 +1,15 @@
-require 'capybara'
-require 'capybara/cucumber'
-require 'byebug'
-require 'selenium-webdriver'
-require 'site_prism'
+require 'httparty'
+require 'cucumber'
 require 'rspec'
-require 'ostruct'
+require 'pry'
+require 'capybara'
 require 'faker'
+require 'report_builder'
+require 'site_prism'
+require 'capybara/cucumber'
+require 'capybara/dsl'
+require 'selenium-webdriver'
+
 require_relative 'page_helper.rb'
 
 World(Pages)

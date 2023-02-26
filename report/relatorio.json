@@ -23,8 +23,9 @@
               "location": "features/steps_definitions/register_account.rb:1"
             },
             "result": {
-              "status": "passed",
-              "duration": 11064457600
+              "status": "failed",
+              "error_message": "Unable to find css \"#firstName1\" (Capybara::ElementNotFound)\n./features/pages/user_page.rb:10:in `create_user'\n./features/steps_definitions/register_account.rb:8:in `\"I create a user\"'\nfeatures/specifications/register_account.feature:4:in `I create a user'",
+              "duration": 37186724500
             }
           }
         ],
@@ -35,7 +36,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 29100
+              "duration": 19500
             }
           },
           {
@@ -44,18 +45,28 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11400
+              "duration": 6000
             }
           }
         ],
         "after": [
           {
             "match": {
+              "location": "features/support/hooks.rb:18"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `embed' for #<Object:0x0000021e59f35290> (NoMethodError)\n./features/support/hooks.rb:22:in `After'",
+              "duration": 106385600
+            }
+          },
+          {
+            "match": {
               "location": "capybara-3.38.0/lib/capybara/cucumber.rb:10"
             },
             "result": {
               "status": "passed",
-              "duration": 107718500
+              "duration": 159295000
             }
           }
         ]

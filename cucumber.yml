@@ -1,6 +1,6 @@
 ## YAML Templatesss
 ---
-default: -p pretty -p dev -p headless  -p html -p json
+default: -p pretty -p dev -p no_headless  -p html -p json
 
 pretty: --format pretty
 ci:  --format progress

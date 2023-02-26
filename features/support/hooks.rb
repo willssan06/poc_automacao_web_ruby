@@ -15,3 +15,10 @@ at_exit do
   ReportBuilder.build_report
 end
 
+After do |scenario|
+  if scenario.failed?
+    screenshot_path = "report/screenshots/FAILED_#{scenario.name.gsub(' ','_').gsub(/[^0-9A-Za-z_]/, '')}.png"
+    page.driver.save_screenshot(screenshot_path)
+    embed("#{screenshot_path}", 'image/png')
+  end
+end
