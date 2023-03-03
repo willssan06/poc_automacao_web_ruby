@@ -7,10 +7,13 @@ require 'faker'
 require 'report_builder'
 require 'site_prism'
 require 'capybara/cucumber'
-require 'capybara/dsl'
 require 'selenium-webdriver'
-
+require 'base64'
+require 'savon'
+require 'nokogiri'
+require 'chunky_png'
 require_relative 'page_helper.rb'
+
 
 World(Pages)
 
@@ -34,5 +37,5 @@ end
 Capybara.configure do |config|
   config.default_driver = :selenium
   config.app_host = CONFIG['url_default']
-  config.default_max_wait_time = 30
+  config.default_max_wait_time = 10
 end

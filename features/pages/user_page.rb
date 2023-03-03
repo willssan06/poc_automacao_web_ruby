@@ -2,7 +2,7 @@
 class UserPage < SitePrism::Page
 
   set_url ''
-  element :name, '#firstName1'
+  element :name, '#firstName'
   element :last_name, '#lastName'
   element :email, '#username'
 

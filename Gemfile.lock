@@ -47,7 +47,7 @@ GEM
     diff-lcs (1.5.0)
     faker (3.1.1)
       i18n (>= 1.8.11, < 2)
-    ffi (1.15.5-x64-mingw32)
+    ffi (1.15.5-x64-mingw-ucrt)
     gyoku (1.4.0)
       builder (>= 2.1.2)
       rexml (~> 3.0)
@@ -82,7 +82,7 @@ GEM
       timeout
     net-smtp (0.3.3)
       net-protocol
-    nokogiri (1.14.2-x64-mingw32)
+    nokogiri (1.14.2-x64-mingw-ucrt)
       racc (~> 1.4)
     nori (2.6.0)
     pry (0.14.2)
@@ -141,7 +141,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
-  x64-mingw32
+  x64-mingw-ucrt
 
 DEPENDENCIES
   capybara
@@ -160,4 +160,4 @@ DEPENDENCIES
   site_prism
 
 BUNDLED WITH
-   2.3.11
+   2.4.7
